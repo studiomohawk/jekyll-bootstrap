@@ -4,9 +4,9 @@ permalink: /:categories/:year/:month/:day/:title
 auto: true
 pygments: true
 var:
-  archive_path: /archive.html
-  categories_path : /categories.html
-  tags_path : /tags.html
+  archive_path: /jekyll-bootstrap/archive.html
+  categories_path : /jekyll-bootstrap/categories.html
+  tags_path : /jekyll-bootstrap/tags.html
 
 production_url : http://username.github.com # or your custom domain name
 title : Jekyll Bootstrap

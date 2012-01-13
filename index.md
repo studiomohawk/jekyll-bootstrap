@@ -4,7 +4,7 @@ title: Hello from Jekyll-Bootstrap-Core
 header: This is Jekyll-Bootstrap
 ---
 
-Read [Jekyll Quick Start](http://jekyllbootstrap.com/jekyll-quick-start.html)
+Read [Jekyll Quick Start](http://jekyllbootstrap.com/usage/jekyll-quick-start.html)
 
 Complete usage and documentation available at: [Jekyll Bootstrap](http://jekyllboostrap.com)
 
@@ -33,7 +33,7 @@ Here's a sample "posts list".
 
 <ul class="posts">
   {% for post in site.posts %}
-    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="/jekyll-bootstrap{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
 </ul>
 
