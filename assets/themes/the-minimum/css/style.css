@@ -369,6 +369,22 @@ pre {
 .unit-article .list-linear .list-head {
   margin-right: 4px;
 }
+.unit-article .list-category span, .unit-article .list-tag span {
+  background-color: #f99157;
+  padding: 1px 4px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  color: white;
+  font-size: 9px;
+  text-transform: uppercase;
+  margin: 0 6px 0 0;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  top: -2px;
+  font-weight: bold;
+}
 .unit-article .list-category {
   margin-bottom: 0;
   text-transform: capitalize;
