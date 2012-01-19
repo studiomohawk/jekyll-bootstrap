@@ -6,7 +6,7 @@ title: Hello from Jekyll-Bootstrap
 <div class="unit-slider">
 	<div id="slider" class="unit-inner unit-slider-inner">
 
-	{% for post in site.posts limit: 3 %}
+	{% for post in site.tags.featured limit: 3 %}
 
 	<img src="{{ post.theme-slider }}" alt="{{ post.theme-title }}" data-caption="#slider-cap-{{ post.theme-title }}">
 	<span class="orbit-caption" id="slider-cap-{{ post.theme-title }}">

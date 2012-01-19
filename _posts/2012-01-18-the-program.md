@@ -2,7 +2,7 @@
 layout: post
 title: "the-program"
 category: minimalist
-tags: [documentation]
+tags: [documentation, featured]
 theme-title: "the-program"
 theme-desc: "A minimalist blog theme with responsive design for documentation"
 theme-slider: "/screenshots/the-program-slider.png"

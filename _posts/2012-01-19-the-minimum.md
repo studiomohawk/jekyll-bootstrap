@@ -2,7 +2,7 @@
 layout: post
 title: "the-minimum"
 category: minimalist
-tags: [blog]
+tags: [blog, featured]
 theme-title: "the-minimum"
 theme-desc: "A minimalist blog theme with responsive design."
 theme-slider: "/screenshots/the-minimum-slider.png"
