@@ -1,0 +1,54 @@
+---
+layout: default
+title: Hello from Jekyll-Bootstrap
+---
+
+<div class="unit-slider">
+	<div id="slider" class="unit-inner unit-slider-inner">
+
+	{% for post in site.posts limit: 3 %}
+
+	<img src="{{ post.theme-slider }}" alt="{{ post.theme-title }}" data-caption="#slider-cap-{{ post.theme-title }}">
+	<span class="orbit-caption" id="slider-cap-{{ post.theme-title }}">
+		<div class="hasGrid">
+			<div class="theme-info">
+				<h2 class="h6"><a href="{{ post.theme-demo }}" title="Demo: {{ post.theme-title }}">{{ post.theme-title }}</a></h2>
+				<p>{{ post.theme-desc }}</p>
+			</div>
+			<div class="theme-btn">
+				<a href="{{ post.url }}" class="btn">Detail &raquo;</a>
+				<a href="{{ post.theme-demo }}" class="btn">Demo &raquo;</a>
+			</div>
+		</div>
+	</span>
+
+	{% endfor %}
+
+</div><!-- #slider -->
+</div><!-- unit-slider -->
+
+<div class="unit-theme-list">
+	<div class="unit-inner unit-theme-list-inner">
+
+		<ol>
+{% for post in site.posts %}
+			<li>
+				<div class="theme">
+					<div class="theme-capture">
+						<a href="{{ post.theme-demo }}">
+							<img src="{{ post.theme-thumb }}" alt="{{ post.theme-title }}">
+							<span class="demo">Demo</span>
+						</a>
+					</div>
+					<div class="theme-desc">
+						<h2 class="h6"><a href="{{ post.theme-demo }}" title="Demo: {{ post.theme-title }}">{{ post.theme-title }}</a></h2>
+						<p class="bold"><a href="{{ post.url }}" title="Detail: {{ post.theme-title }}">Detail &raquo;</a></p>
+						<p>{{ post.theme-desc }}</p>
+					</div>
+				</div>
+			</li>
+{% endfor %}
+	</ol>
+
+	</div><!-- unit-inner -->
+</div><!-- unit-theme-list -->
