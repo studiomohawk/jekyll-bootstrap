@@ -10,7 +10,7 @@ var:
   rss_path: /atom.xml
 
 production_url : http://username.github.com # or your custom domain name
-title : Jekyll Boostrap
+title : _layouts
 
 author :
   name : Name Lastname

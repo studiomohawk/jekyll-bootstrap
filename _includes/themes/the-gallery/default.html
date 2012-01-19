@@ -19,12 +19,10 @@
 		<div class="unit-head">
 			<div class="unit-inner unit-head-inner">
 				<p class="logo"><a href="/">{{ site.title }}</a></p>
+				<p class="tagline">Theme Gallery for Jekyll</p>
 				<nav class="nav-global">
 					<ul>
-						<li class="archive"><a href="/archive.html">archive</a></li>
-						<li class="page"><a href="/pages.html">pages</a></li>
-						<li class="category"><a href="/categories.html">categories</a></li>
-						<li class="tag"><a href="/tags.html">tags</a></li>
+						<li class="about"><a href="#about">about</a></li>
 						<li class="forkme"><iframe src="http://markdotto.github.com/github-buttons/github-btn.html?user=plusjade&repo=jekyll-bootstrap&type=fork&count=true"
 								allowtransparency="true" frameborder="0" scrolling="0" width="95px" height="20px"></iframe></li>
 					</ul>
@@ -44,16 +42,28 @@
 	<footer class="the-footer">
 		<div class="unit-foot">
 			<div class="unit-inner unit-foot-inner">
-				<div class="misc vcard">
-					<h4>about</h4>
-					<ul>
-						<li class="contact"><address><span class="author fn n">{{ site.author.name }}</span> - <span class="fn email">{{ site.author.email }}</span></address></li>
-						<li class="github"><a href="http://github.com/{{ site.author.github }}/" rel="me">github.com/{{ site.author.github }}</a></li>
-						<li class="twitter"><a href="http://twitter.com/{{ site.author.twitter }}/" rel="me">twitter.com/{{ site.author.twitter }}</a></li>
-						<li class="rss"><a href="http://feeds.feedburner.com/{{ site.author.feedname }}">Subscribe to RSS Feed</a></li>
-					</ul>
-				</div><!-- misc -->
-				<p class="licence">
+				<div id="about" class="hadGrid">
+					<div class="about layout">
+						<h4>About _layout</h4>
+						<p>
+						_layout is a theme gallary for <a href="https://github.com/mojombo/jekyll">Jekyll, a static blog genelator</a>.<br>
+						All themes are compatible with hosting at github by utilizing <a href="http://jekyllbootstrap.com/">Jekyll Bootstrap</a> as a template.<br>
+						It is easy to install and depolying themes.<br>
+						You can start blogging like a hacker.<br><br>
+						If you're a designer, you can comtribute your theme. Just fork [Jekyll Bootstrap] repo from github and send a pull request.<br>
+						This site is also made with Jekyll Bootstrap and I'm [Yuya Saito], web designer/front-end developer from tokyo, is who created this site.
+						</p>
+					</div><!-- layout -->
+					<div class="about jekyllbootstrap">
+						<h4>About Jekyll Bootstrap</h4>
+						<p>
+						The quickest, most hassle-free way to get your new Jekyll powered website published. All code is 100% compatible with GitHub pages.<br>
+						You can learn more about it <a href="http://jekyllbootstrap.com/">here</a>. And if you have no idea what Jekyll is, then you can learn about it as well.<br><br>
+						Created by <a href="http://plusjade.com/">Jade Dominguez</a>
+						</p>
+					</div>
+				</div>
+				<p class="license">
 					Theme: <a href="http://layouts-the.me">the_minimum</a> based on <a href="http://jekyllbootstrap.com/">Jekyll-bootstrap</a>.<br>
 					Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a>.
 				</p>
@@ -61,6 +71,9 @@
 		</div><!-- unit-foot -->
 	</footer>
 </div><!-- page -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="{{ theme_asset_path }}/js/plugins.js"></script>
+<script src="{{ theme_asset_path }}/js/script.js"></script>
 <script>
 	(function(d, s) {
 		var js, fjs = d.getElementsByTagName(s)[0], load = function(url, id) {
